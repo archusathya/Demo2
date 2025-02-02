@@ -27,25 +27,3 @@ jobs:
         with:
           node-version: '14'
           
-  
-  compile:
-    name: Compile Program
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Check out code
-        uses: actions/checkout@v2
-
-      - name: Compile program
-        run: make program
-
-  run:
-    name: Run Program
-    runs-on: ubuntu-latest
-    needs: compile
-    steps:
-      - name: Check out code
-        uses: actions/checkout@v2
-
-      - name: Run program
-        run: ./program
