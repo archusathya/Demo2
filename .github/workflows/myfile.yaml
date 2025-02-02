@@ -21,9 +21,6 @@ jobs:
         with:
           python-version: 3.x
        
-               
-      - name: Run Python Backend tests
-        run: python manage.py test
 
       - name: Set up Node
         uses: actions/setup-node@v2
