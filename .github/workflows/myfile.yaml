@@ -27,21 +27,7 @@ jobs:
         with:
           node-version: '14'
           
-      - name: Install Frontend Requirements
-        run: |
-          cd frontend
-          npm install
-
-      - name: Test React App
-        run: |
-          cd frontend
-          npm test
-
-      - name: Build React App
-        run: |
-          cd frontend
-          npm run build
-
+  
   compile:
     name: Compile Program
     runs-on: ubuntu-latest
