@@ -1,6 +1,3 @@
-Here is the detailed workflow YAML file you requested:
-
-```yaml
 name: Workflow
 
 on:
@@ -73,6 +70,3 @@ jobs:
 
       - name: Run program
         run: ./program
-```
-
-This YAML file describes a workflow with three jobs: `build`, `compile` and `run`. The `build` job will setup Python and NodeJS,
